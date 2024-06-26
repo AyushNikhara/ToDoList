@@ -1,0 +1,90 @@
+body {
+    background-color: #a7bfe8;
+    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui,
+    helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: #333333;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+}
+
+main{
+    text-align: center;
+}
+
+.date{
+    border: 5px solid;
+    margin: auto;
+    width: 80%;
+    padding: 30px;
+    font-size: 1.5rem;
+    border-color: transparent;
+    color: #333333;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+.task-list li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.task-list label {
+    margin-left: 10px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.task-list input[type="checkbox"]:checked + label {
+    text-decoration: line-through;
+    text-decoration-color: red;
+}
+
+.item{
+    margin: 50px;
+}
+
+.List{
+    border: 5px solid;
+    margin: auto;
+    width: 32%;
+    padding: 30px;
+    font-size: 1.3rem;
+    background-color:#f2f3f2 ;
+}
+
+@media(max-width: 1028px){
+    .List{
+    width: 40%;
+    font-size: 1rem;
+    }
+    .date{
+        width: 50%;
+        font-size: 1rem;
+    }
+}
+
+.checkbox {
+    vertical-align: left;
+}
+
+.add{
+        background-color: #6b8e23;
+        color: #fff;
+        padding: 10px 20px; 
+        border: none; 
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s; 
+}
+.add:hover {
+    background-color: #a3ba77ca;;
+    transform: scale(1.05); 
+}
