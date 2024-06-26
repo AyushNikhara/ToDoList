@@ -1,0 +1,32 @@
+<%- include ("partials/header.ejs") %>
+
+    <div class="date">
+        <h2>
+            <%= day %>
+        </h2>
+    </div>
+
+    <div class="List">
+        <ul class="task-list">
+            <h4>
+                <% newItem.forEach(function(item){ %>
+                    <li>
+                        <form action="/delete" method="post">
+                        <input type="checkbox" id="task1" name="checkbox" value="<%=item._id%>" onchange="this.form.submit()">
+                        <label for="item">
+                            <%= item.name %>
+                        </label>
+                    </form>
+                    </li>
+                    <% }) %>
+                        <form action="/" method="POST">
+                            <input type="text" name="newItem">
+                            <button class="add fa-sharp fa-solid fa-plus" type="submit"></button>
+                        </form>
+            </h4>
+        </ul>
+    </div>
+
+
+
+    <%- include ("partials/footer.ejs") %>
